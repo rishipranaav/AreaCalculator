@@ -1,0 +1,70 @@
+import java.util.*;
+
+class area_menu
+{
+    void loop()
+    {
+        Scanner ob = new Scanner(System.in);
+        int n, r, l, b, h ,ba ,d1 ,d2;
+        
+        System.out.println(" 1-Square \n 2-Rectangle \n 3-Circle \n 4-Triangle \n 5-Parallelogram \n 6-Rhombus \n 7-Trapezoid ");
+        n = ob.nextInt();
+        
+        switch (n)
+        {
+            case 1 ://square
+                System.out.println("Enter Length :");
+                l = ob.nextInt();
+                System.out.println("area ="+(l*l));
+                break;
+                
+            case 2 ://rectangle
+                System.out.println("Enter Length :");
+                l = ob.nextInt();
+                System.out.println("Enter Breadth :");
+                b = ob.nextInt();
+                System.out.println("area ="+(l*b));
+                break;
+                
+            case 3 ://circle
+                System.out.println("Enter Radius :");
+                r = ob.nextInt();
+                System.out.println("area ="+(3.14*r*r));
+                break;
+                
+            case 4 ://triangle
+                System.out.println("Enter Height :");
+                h = ob.nextInt();
+                System.out.println("Enter Base :");
+                ba = ob.nextInt();
+                System.out.println("area ="+(0.5*ba*h));
+                break;
+                
+            case 5 ://parallelogram
+                System.out.println("Enter Height :");
+                h = ob.nextInt();
+                System.out.println("Enter Base :");
+                ba = ob.nextInt();
+                System.out.println("area ="+(ba*h));
+                break;
+                
+            case 6 ://rhombus
+                System.out.println("Enter Diagonal 1 :");
+                d1 = ob.nextInt();
+                System.out.println("Enter Diagonal 2 :");
+                d2 = ob.nextInt();
+                System.out.println("area ="+(0.5*d1*d2));
+                break;
+                
+            case 7 ://trapezoid
+                System.out.println("Enter Base 1 :");
+                d1 = ob.nextInt();
+                System.out.println("Enter Base 2 :");
+                d2 = ob.nextInt();
+                System.out.println("Enter Height :");
+                h = ob.nextInt();
+                System.out.println("area ="+(0.5*(d1+d2)*h));
+                break;
+        }
+    }
+}
